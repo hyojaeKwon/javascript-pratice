@@ -46,6 +46,7 @@ userStorage.loginUser(
   (user) => {
     userStorage.getRoles(
       user,
+      //get user information, and print it
       userWithRole => {
         alert(`hello ${userWithRole.name}, your role is ${userWithRole.role}`);
       },
