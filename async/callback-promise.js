@@ -9,7 +9,7 @@
 class UserInformation {
   loginUser(id, password) {
     //async call back
-    return new Promise((resolve,reject) => {
+    return new Promise((resolve, reject) => {
       setTimeout(() => {
         // Verify Id & PW by using if statement
         if (id === "hello" && password === "password") {
@@ -46,11 +46,9 @@ const pw = prompt('enter your pw');
 userStorage
   .then(userStorage.loginUser)
   .then(userStorage.getRoles)
-  .then(user =>{
+  .then(user => {
     alert(`hello ${user.name}, your role is ${user.role}`);
   })
   .catch(error => {
     console.log(error)
   })
-
-
