@@ -1,8 +1,9 @@
 const loginInput = document.querySelector("#login-section input");
 const loginButton = document.querySelector('#login-section button');
+const loginForm = document.querySelector("#login-section")
 
-function onLoginButton(){
-  console.dir(loginInput.value); // print the text value of the loginInput tag
+function onLoginSubmit(){
+  const value = loginInput.value;
+  console.log(value)
 }
-
-loginButton.addEventListener('click',onLoginButton)
+loginForm.addEventListener("submit",onLoginSubmit)
