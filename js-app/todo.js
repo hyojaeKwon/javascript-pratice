@@ -1,5 +1,5 @@
 const todoForm = document.getElementById("todo-form");
-const todoInput = todoForm.querySelector("input");
+const todoInput = document.querySelector("#todo-form input");
 const todoList = document.getElementById("todo-list");
 
 function paintToDo(newTodo) {
@@ -12,7 +12,7 @@ function paintToDo(newTodo) {
 
 function handleToDoSubmit(event) {
   event.preventDefault();
-  const newTodo = todoInput.value();
+  const newTodo = todoInput.value;
   todoInput.value = "";
   paintToDo(newTodo)
 }
