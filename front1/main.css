@@ -1,0 +1,52 @@
+body {
+  margin: 0px 0px;
+}
+
+header {
+  background-color: #e2e2e2;
+  border-bottom: 0.5px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: ; */
+}
+
+.nav-container {
+  padding: 20px 0;
+  width: 1000px;
+  display: flex;
+}
+.float{
+  float: left;
+}
+.item-container {
+  margin: auto;
+  list-style: none;
+  list-style-type: disc;
+}
+
+.item-container li {
+  list-style: none;
+  margin: 0px 40px 0px 40px;
+}
+
+.item-container li  :hover {
+  transition-duration: 1s;
+  background-color: blanchedalmond;
+}
+
+.item-container li  span {
+  font-size: 25px;
+}
+
+.end {
+  margin-top: 5px;
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.end span {
+  font-size: 20px;
+}
