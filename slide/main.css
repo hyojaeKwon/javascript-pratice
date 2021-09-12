@@ -1,0 +1,24 @@
+.large-container{
+  margin: 50px 50px 50px 50px;
+  height: 150px;
+  border: 0.5px blueviolet solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  width: 500px;
+}
+#prev{
+  padding-right: 50px;
+}
+#next{
+  padding-left: 50px;
+}
+.box{
+  text-align: center;
+  font-size: 30px;
+}
+.box-span{
+  margin-bottom: 20px;
+}
